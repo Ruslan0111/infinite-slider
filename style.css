@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 
-
 .slider-container {
   overflow: hidden;
   white-space: nowrap;
   margin-top: 200px;
+  /* font-size: 0; */
 }
 
 .slider-content-wrapper {
@@ -23,6 +23,11 @@
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
+  margin-right: -5px;
+}
+
+.slider-inner:last-child {
+  margin-right: 0;
 }
 
 .slide {
@@ -34,6 +39,7 @@
   opacity: 0.25;
   -webkit-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
+  margin-right: -5px;
 }
 
 .slide:hover {
